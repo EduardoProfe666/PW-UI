@@ -20,7 +20,5 @@ export default defineConfig({
       include: resolve(dirname(fileURLToPath(import.meta.url)), './src/i18n/locales/**'),
     }),
   ],
-  base: process.env.NODE_ENV === 'production'
-    ? '/pw-ui/'
-    : '/'
+  base: process.env.NODE_ENV === '/pw-ui/',
 })
